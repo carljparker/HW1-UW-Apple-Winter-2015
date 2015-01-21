@@ -12,6 +12,9 @@
 		874B91501A6F37FB00FEF418 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874B914F1A6F37FB00FEF418 /* Images.xcassets */; };
 		874B91531A6F37FB00FEF418 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 874B91511A6F37FB00FEF418 /* MainMenu.xib */; };
 		874B915F1A6F37FB00FEF418 /* HW_1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B915E1A6F37FB00FEF418 /* HW_1Tests.m */; };
+		874B916B1A6F38AD00FEF418 /* ArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B91681A6F38AD00FEF418 /* ArrayTests.m */; };
+		874B916C1A6F38AD00FEF418 /* DictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B91691A6F38AD00FEF418 /* DictionaryTests.m */; };
+		874B916D1A6F38AD00FEF418 /* StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 874B916A1A6F38AD00FEF418 /* StringTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 		874B91581A6F37FB00FEF418 /* HW-1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HW-1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		874B915D1A6F37FB00FEF418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		874B915E1A6F37FB00FEF418 /* HW_1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW_1Tests.m; sourceTree = "<group>"; };
+		874B91681A6F38AD00FEF418 /* ArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayTests.m; sourceTree = "<group>"; };
+		874B91691A6F38AD00FEF418 /* DictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryTests.m; sourceTree = "<group>"; };
+		874B916A1A6F38AD00FEF418 /* StringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 		874B915B1A6F37FB00FEF418 /* HW-1Tests */ = {
 			isa = PBXGroup;
 			children = (
+				874B91681A6F38AD00FEF418 /* ArrayTests.m */,
+				874B91691A6F38AD00FEF418 /* DictionaryTests.m */,
+				874B916A1A6F38AD00FEF418 /* StringTests.m */,
 				874B915E1A6F37FB00FEF418 /* HW_1Tests.m */,
 				874B915C1A6F37FB00FEF418 /* Supporting Files */,
 			);
@@ -219,7 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874B916C1A6F38AD00FEF418 /* DictionaryTests.m in Sources */,
 				874B915F1A6F37FB00FEF418 /* HW_1Tests.m in Sources */,
+				874B916D1A6F38AD00FEF418 /* StringTests.m in Sources */,
+				874B916B1A6F38AD00FEF418 /* ArrayTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
