@@ -21,41 +21,45 @@
 -(NSString*)yourName
 {
     // TODO: Return your name in string form
-    return nil;
+    return @"Carl Parker";
 }
 
 -(NSString*)stringFromInt:(int)input
 {
     // TODO: Convert the integer into a string
-    return nil;
+    return [NSString stringWithFormat:@"%d", input]; ;
 }
 
 -(NSUInteger)countOfString:(NSString*)input
 {
     // TODO: Find out how long the string is
-    return 0;
+    return [input length];
 }
 
 -(BOOL)string:(NSString*)whole beginsWith:(NSString*)prefix
 {
     // TODO: Confirm that a prefix exists
-    return NO;
+    return [whole hasPrefix: prefix ];
 }
 
 -(BOOL)string:(NSString*)whole endsWith:(NSString*)suffix
 {
     // TODO: Confirm that a suffix exists
-    return NO;
+    return [whole hasSuffix: suffix ];
 }
 
 -(BOOL)string:(NSString*)whole containsSubstring:(NSString*)substring
 {
     // TODO: Confirm that a string has a substring
-    return NO;
+    
+    NSRange resultRange = [whole rangeOfString:substring];
+        
+    if ( resultRange.length ) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
-
-
-
 
 
 

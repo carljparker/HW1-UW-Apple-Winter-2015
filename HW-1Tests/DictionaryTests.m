@@ -19,24 +19,40 @@
 -(NSDictionary*)informationDictionary
 {
     // TODO: Make and return any dictionary
-    return nil;
+    return @{ @"car.make": @"bmw", @"car.model": @"328iS" };
 }
 
 -(NSUInteger)numberOfEntriesInDictionary:(NSDictionary*)input
 {
     // TODO: Find a way to count entries in a dictionary
-    return 0;
+    return [input count];
 }
 
 -(BOOL)dictionary:(NSDictionary*)dictionary containsKey:(NSString*)key
 {
     // TODO: find a way to look for all the keys
+    
+    NSArray * allKeysArray = dictionary.allKeys;
+    
+    for (int idx=0; idx < allKeysArray.count ; idx++) {
+        if ( [ allKeysArray[idx] isEqualToString:key ]) {
+            return YES;
+        }
+    }
     return NO;
 }
 
 -(BOOL)dictionary:(NSDictionary*)dictionary containsValue:(id)value
 {
     // TODO: find a way to look for all the values
+    
+    NSArray * allValuesArray = dictionary.allValues;
+    
+    for (int idx=0; idx < allValuesArray.count ; idx++) {
+        if ( [ allValuesArray[idx] isEqualToString:value ]) {
+            return YES;
+        }
+    }
     return NO;
 }
 

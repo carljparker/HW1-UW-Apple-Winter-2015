@@ -17,31 +17,36 @@
 -(NSArray*)groceryList
 {
     // TODO: Make and return any array
-    return nil;
+    return @[ @"Apples", @"Bananas", @"Carrots" ];
+
 }
 
 -(NSUInteger)numberOfItemsInArray:(NSArray*)list
 {
     // TODO: Find out the array's length or count
-    return 0;
+    return [list count];
 }
 
 -(BOOL)arrayBeginsWithBananas:(NSArray*)list
 {
     // TODO: Find out if the first element in list is "Bananas"
-    return NO;
+    return [[list firstObject] isEqual:@"Bananas"];
 }
 
 -(BOOL)arrayEndsWithBananas:(NSArray*)list
 {
     // TODO: Find out if the last element in list is "Bananas"
-    return NO;
+    return [[list lastObject] isEqual:@"Bananas"];
 }
 
 -(BOOL)arrayContainsBananas:(NSArray*)list
 {
     // TODO: Find a way to confirm that "Bananas" exists in the array"
-    return NO;
+    if ( [list indexOfObject:@"Bananas"] == NSNotFound  ) {
+        return NO;
+    } else {
+        return YES;
+    }
 }
 
 
